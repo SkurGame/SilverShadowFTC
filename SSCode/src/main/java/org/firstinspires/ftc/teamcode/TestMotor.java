@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @Autonomous(name = "test_motor", group = "Concept")
-public class test_motor extends LinearOpMode {
+public class TestMotor extends LinearOpMode {
 
     @Override
     public void runOpMode() {
