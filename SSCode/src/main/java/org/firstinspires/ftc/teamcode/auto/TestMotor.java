@@ -1,8 +1,10 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.auto;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
+
+import org.firstinspires.ftc.teamcode.Config;
 
 @Autonomous(name = "test_motor", group = "Concept")
 public class TestMotor extends LinearOpMode {
@@ -20,7 +22,7 @@ public class TestMotor extends LinearOpMode {
         waitForStart();
 
         while (opModeIsActive()) {
-            myMotor.setPower(0.7);
+            myMotor.setPower(Config.motor.boost);
 
             telemetry.addData("Status", "Running");
             telemetry.addData("Motor Power", "%.2f", myMotor.getPower());
