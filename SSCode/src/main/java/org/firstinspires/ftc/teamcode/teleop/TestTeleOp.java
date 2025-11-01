@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name = "teleop_test", group = "Concept")
-public class TestTeleop extends LinearOpMode {
+public class TestTeleOp extends LinearOpMode {
     private DcMotor leftUp, leftDown, rightUp, rightDown;
 
     public void runOpMode() {
@@ -20,7 +20,7 @@ public class TestTeleop extends LinearOpMode {
         waitForStart();
 
         while (opModeIsActive()) {
-            double ly = gamepad1.left_stick_y;
+            double ly = -gamepad1.left_stick_y;
             double lx = gamepad1.left_stick_x;
             boolean rb = gamepad1.right_bumper;
 

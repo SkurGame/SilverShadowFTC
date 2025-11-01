@@ -8,10 +8,10 @@ import org.firstinspires.ftc.teamcode.Config;
 
 @Autonomous(name = "test_motor", group = "Concept")
 public class TestMotor extends LinearOpMode {
+    private DcMotor myMotor;
 
     @Override
     public void runOpMode() {
-        DcMotor myMotor = null;
         myMotor = hardwareMap.get(DcMotor.class, "myMotor");
         myMotor.setDirection(DcMotor.Direction.FORWARD);
         myMotor.setPower(0);
