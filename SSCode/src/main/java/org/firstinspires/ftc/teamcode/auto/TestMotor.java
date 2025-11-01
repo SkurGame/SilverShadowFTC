@@ -22,7 +22,7 @@ public class TestMotor extends LinearOpMode {
         waitForStart();
 
         while (opModeIsActive()) {
-            myMotor.setPower(Config.motor.boost);
+            myMotor.setPower(Config.motorPower.boost);
 
             telemetry.addData("Status", "Running");
             telemetry.addData("Motor Power", "%.2f", myMotor.getPower());
